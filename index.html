@@ -6,7 +6,10 @@
     <link rel="canonical" href="https://www.lnreader.app/" />
     <title>Redirecting to LNReader</title>
     <script>
-      window.location.href = "https://www.lnreader.app/";
+      const path = window.location.pathname;
+      window.location.href = path === "/plugins"
+        ? "https://www.lnreader.app/plugins" 
+        : "https://www.lnreader.app/";
     </script>
   </head>
   <body style="font-family: monospace">
